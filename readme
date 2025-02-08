@@ -10,22 +10,7 @@ Solar System Explorer is a **Java-based** program that allows users to explore o
 - 📊 **Calculate volumes** of selected planets and compare them with the Sun
 - 🎨 **Animated console output** for an enhanced user experience
 
-## 📂 Project Structure
-```
-📦 SolarSystemExplorer
-├── src/
-│   ├── SolarSystemOOP.java         # Object-Oriented version
-│   ├── SolarSystemProcedural.java  # Procedural version
-│   ├── Planet.java                 # Planet class
-│   ├── Moon.java                   # Moon class
-│   ├── Sun.java                     # Sun class
-│   ├── data.json                    # Solar system data
-├── lib/
-│   ├── json-20210307.jar            # JSON parsing library
-│   ├── commons-text-1.13.0.jar      # Apache Commons Text for string similarity
-├── .gitignore                       # Ignored files
-├── README.md                        # This file
-```
+
 
 ## 🚀 Getting Started
 ### 📥 Prerequisites

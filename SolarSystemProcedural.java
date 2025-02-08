@@ -13,7 +13,7 @@ public class SolarSystemProcedural {
         try {
             displayIntro();
 
-            String content = new String(Files.readAllBytes(Paths.get("data.json"))); // Ensure JSON file exists
+            String content = new String(Files.readAllBytes(Paths.get("data.json"))); 
             JSONObject jsonData = new JSONObject(content);
 
             String sunName = jsonData.getString("Name");

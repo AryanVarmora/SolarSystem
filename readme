@@ -1,0 +1,92 @@
+# 🌌 Solar System Explorer
+
+## 📌 Project Overview
+Solar System Explorer is a **Java-based** program that allows users to explore our solar system interactively. Users can retrieve planetary data, compare their sizes, and determine whether selected planets can fit inside the Sun.
+
+## 🛠 Features
+- 🌍 Retrieve **planetary information** (diameter, circumference, distance from Sun, etc.)
+- 🌕 Get details about **moons** of planets
+- 🔎 **String similarity search** to suggest correct planet names if the user enters an incorrect one
+- 📊 **Calculate volumes** of selected planets and compare them with the Sun
+- 🎨 **Animated console output** for an enhanced user experience
+
+## 📂 Project Structure
+```
+📦 SolarSystemExplorer
+├── src/
+│   ├── SolarSystemOOP.java         # Object-Oriented version
+│   ├── SolarSystemProcedural.java  # Procedural version
+│   ├── Planet.java                 # Planet class
+│   ├── Moon.java                   # Moon class
+│   ├── Sun.java                     # Sun class
+│   ├── data.json                    # Solar system data
+├── lib/
+│   ├── json-20210307.jar            # JSON parsing library
+│   ├── commons-text-1.13.0.jar      # Apache Commons Text for string similarity
+├── .gitignore                       # Ignored files
+├── README.md                        # This file
+```
+
+## 🚀 Getting Started
+### 📥 Prerequisites
+Make sure you have the following installed:
+- Java 8 or later
+- JSON library (`json-20210307.jar`)
+- Apache Commons Text (`commons-text-1.13.0.jar`)
+
+### 📦 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/SolarSystemExplorer.git
+   cd SolarSystemExplorer/src
+   ```
+2. Compile the Java files:
+   ```sh
+   javac -cp ".:../lib/json-20210307.jar:../lib/commons-text-1.13.0.jar" *.java
+   ```
+3. Run the program:
+   ```sh
+   java -cp ".:../lib/json-20210307.jar:../lib/commons-text-1.13.0.jar" SolarSystemOOP
+   ```
+
+## 📊 Example Output
+```
+🌌 Welcome to the Solar System Explorer 🌍✨
+Loading data...
+
+Enter the name of the planet you want information about (or type 'exit' to finish):
+Earth
+
+Planet: Earth
+Distance from Sun: 1.00 AU
+Orbital Period: 1.00 years
+Diameter: 12756.00 km
+Circumference: 40075.00 km
+Moons:
+  - Luna (Diameter: 3474 km, Circumference: 10917 km)
+
+Total volume of selected planets: 2.448805475822253E15 cubic km
+Volume of the Sun: 1.4367550402417318E18 cubic km
+Can the selected planets fit inside the Sun? true
+```
+
+## 🛠 Troubleshooting
+- **Issue:** `package org.json does not exist`
+  - **Fix:** Ensure you have `json-20210307.jar` in your classpath.
+- **Issue:** `java.lang.ClassNotFoundException: SolarSystemOOP`
+  - **Fix:** Ensure you compiled the files correctly and are running from the correct directory.
+
+## 👨‍💻 Contributing
+1. **Fork** the repository
+2. **Create** a new branch (`git checkout -b feature-name`)
+3. **Commit** your changes (`git commit -m "Add new feature"`)
+4. **Push** to the branch (`git push origin feature-name`)
+5. **Create a Pull Request**
+
+## 📝 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+💡 *If you like this project, consider giving it a ⭐ on GitHub!*
+

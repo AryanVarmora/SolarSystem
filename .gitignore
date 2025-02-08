@@ -1,0 +1,25 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore JAR files (dependencies should be managed externally)
+*.jar
+
+# Ignore IDE project files
+*.iml
+*.xml
+.idea/
+.vscode/
+
+# Ignore build output directories
+out/
+bin/
+target/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore macOS system files
+.DS_Store
+

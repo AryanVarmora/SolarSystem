@@ -3,7 +3,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import java.nio.file.*;
 import java.io.IOException;
-// Import the separate class files
+
 import java.util.*;
 import org.apache.commons.text.similarity.LevenshteinDistance;
 
@@ -33,7 +33,7 @@ public class SolarSystemOOP {
                     String suggestedPlanet = suggestClosestPlanet(planetName);
                     int distance = levenshtein.apply(planetName.toLowerCase(), suggestedPlanet.toLowerCase());
 
-                    if (distance < 3) {  // If suggestion is very close, auto-correct
+                    if (distance < 3) { 
                         System.out.println("Did you mean: " + suggestedPlanet + "? Selecting it automatically...");
                         entries.add(suggestedPlanet);
                         displayPlanetInfo(suggestedPlanet);

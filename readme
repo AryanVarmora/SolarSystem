@@ -22,7 +22,7 @@ Make sure you have the following installed:
 ### 📦 Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/SolarSystemExplorer.git
+   git clone https://github.com/AryanVarmora/SolarSystem.git
    cd SolarSystemExplorer/src
    ```
 2. Compile the Java files:
